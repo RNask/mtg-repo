@@ -6,8 +6,13 @@ public class Carta {
     String tipo;
     String subtipo;
     String descricao;
-    String edicao;
-    String raridade;
     String ataque;
     String resistencia;
+
+    void apresentaCarta() {
+        System.out.println("Carta: " + nome);
+        System.out.println("Custo: " + custo);
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Subtipo: " + subtipo);
+    }
 }
