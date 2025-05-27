@@ -1,5 +1,6 @@
 import Modelos.Carta;
 
+//Mika Snowden, 27/5/2025, 12:32 > Classe utilizada majoritariamente para testes.
 public class Main {
     public static void main(String[] args) {
         Carta cartaTeste = new Carta();
@@ -19,6 +20,7 @@ public class Main {
         cartaTeste.setRaridade("Rara");
         cartaTeste.setEdicao("Marcha das Máquinas: Consequências (2023)");
         cartaTeste.setFoil(false);
+        cartaTeste.setQuantidade(1);
 
         cartaTeste.apresentaCarta();
     }
