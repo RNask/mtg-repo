@@ -1,85 +1,91 @@
 package Modelos;
 
 public class Carta {
-    private String nome;
-    private String cor;
-    private String custo;
+    private String name;
+    private String color;
+    private String cost;
     private int cmc;
-    private String tipo;
-    private String subtipo;
-    private String descricao;
-    private String poder;
-    private String resistencia;
-    private String raridade;
-    private String edicao;
+    private String supertype;
+    private String type;
+    private String subtype;
+    private String description;
+    private String power;
+    private String toughness;
+    private String rarity;
+    private String edition;
     private boolean foil;
-    private int quantidade;
+    private int quantity;
 
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     };
 
-    public void setCor(String cor) {
-        this.cor = cor;
+    public void setColor(String color) {
+        this.color = color;
     };
 
-    public void setCusto(String custo) {
-        this.custo = custo;
+    public void setCost(String cost) {
+        this.cost = cost;
     };
 
     public void setCmc(int cmc) {
         this.cmc = cmc;
     };
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setSupertype(String supertype) {
+        this.supertype = supertype;
     };
 
-    public void setSubtipo(String subtipo) {
-        this.subtipo = subtipo;
+    public void setTipo(String type) {
+        this.type = type;
     };
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setSubtype(String subtype) {
+        this.subtype = subtype;
     };
 
-    public void setPoder(String poder) {
-        this.poder = poder;
+    public void setDescription(String description) {
+        this.description = description;
     };
 
-    public void setResistencia(String resistencia) {
-        this.resistencia = resistencia;
+    public void setPower(String power) {
+        this.power = power;
     };
 
-    public void setRaridade(String raridade) {
-        this.raridade = raridade;
+    public void setToughness(String toughness) {
+        this.toughness = toughness;
     };
 
-    public void setEdicao(String edicao) {
-        this.edicao = edicao;
+    public void setRarity(String rarity) {
+        this.rarity = rarity;
+    };
+
+    public void setEdition(String edition) {
+        this.edition = edition;
     };
 
     public void setFoil(boolean foil) {
         this.foil = foil;
     };
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     };
 
     public void apresentaCarta() {
-        System.out.println("Carta: " + nome);
-        System.out.println("Cor: " + cor);
-        System.out.println("Custo: " + custo);
+        System.out.println("Carta: " + name);
+        System.out.println("Cor: " + color);
+        System.out.println("Custo: " + cost);
         System.out.println("CMC: " + cmc);
-        System.out.println("Tipo: " + tipo);
-        System.out.println("Subtipo: " + subtipo);
-        System.out.println("Descrição: " + descricao);
-        System.out.println("Ataque/Resistência: " + poder + "/" + resistencia);
-        System.out.println("Raridade: " + raridade);
-        System.out.println("Edição: " + edicao);
+        System.out.println("Supertipo: " + supertype);
+        System.out.println("Tipo: " + type);
+        System.out.println("Subtipo: " + subtype);
+        System.out.println("Descrição: " + description);
+        System.out.println("Ataque/Resistência: " + power + "/" + toughness);
+        System.out.println("Raridade: " + rarity);
+        System.out.println("Edição: " + edition);
         System.out.println("Foil: " + foil);
-        System.out.println("Quantidade: " + quantidade);
-    }
+        System.out.println("Quantidade: " + quantity);
+    };
 }

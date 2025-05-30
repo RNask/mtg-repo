@@ -1,0 +1,56 @@
+// Mika Snowden, 28/5/2025, 16:01 > A tabela "cartas" foi deletada e será substituída pela tabela "cards", colunas serão adicionadas e o idioma primário será o inglês para fins internos a partir de agora.
+DROP TABLE cartas;
+
+CREATE TABLE cards (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(255) NOT NULL,
+    color VARCHAR(200) NOT NULL,
+	cost VARCHAR(100),
+	cmc INTEGER,
+	supertype VARCHAR(200),
+	type VARCHAR(200),
+	subtype VARCHAR(200),
+	description TEXT,
+	power VARCHAR(100),
+	toughness VARCHAR(100),
+	rarity VARCHAR(200),
+	edition VARCHAR(255),
+	foil BOOLEAN,
+    quantity INTEGER
+);
+
+DROP TABLE cards;
+
+SELECT * FROM cards;
+
+INSERT INTO cards (
+	name,
+    color,
+	cost,
+	cmc,
+	supertype,
+	type,
+	subtype,
+	description,
+	power,
+	toughness,
+	rarity,
+	edition,
+	foil,
+    quantity
+) VALUES (
+	'Island',
+    'U',
+	'',
+	0,
+	'Basic',
+	'Land',
+	'Island',
+	'',
+	'',
+	'',
+	'Common',
+	'Commander (2014 Edition)',
+	false,
+    1
+);
