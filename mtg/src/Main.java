@@ -3,7 +3,8 @@ import Modelos.Carta;
 //Mika Snowden, 27/5/2025, 12:32 > Classe utilizada majoritariamente para testes.
 public class Main {
     public static void main(String[] args) {
-        Carta cartaTeste = new Carta();
+
+//        Carta cartaTeste = new Carta();
 
 /*        cartaTeste.setName("Reformadora da Metrópole");
         cartaTeste.setColor("Branca");
@@ -15,7 +16,7 @@ public class Main {
         cartaTeste.setDescription("""
             Voar, vigilância
             Você tem resistência a magia.
-            Toda vez que Reformadora da Metrópoloe sofre dano, você ganha aquela quantidade de pontos de vida.""");
+            Toda vez que Reformadora da Metrópole sofre dano, você ganha aquela quantidade de pontos de vida.""");
         cartaTeste.setPower("2");
         cartaTeste.setToughness("3");
         cartaTeste.setRarity("Rara");
@@ -24,6 +25,6 @@ public class Main {
         cartaTeste.setQuantity(1);
 */
 
-        cartaTeste.apresentaCarta();
+//        cartaTeste.apresentaCarta();
     }
 }
